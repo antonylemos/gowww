@@ -1,0 +1,5 @@
+gowww-react/node_modules
+gowww-vue/node_modules
+gowww-angular/node_modules
+gowww-svelte/node_modules
+.vscode
