@@ -1,25 +1,16 @@
 import React from 'react';
-import { FiAirplay, FiGrid, FiSettings, FiSidebar, FiUsers } from 'react-icons/fi';
 
+import Navbar from '../../components/Navbar';
 import Emoji from '../../components/Emoji';
 
-import { Container, Navbar, Wrapper, Header, HeaderContent } from './styles';
+import { Container, Wrapper, Header, HeaderContent } from './styles';
 
 import clubBrand from '../../assets/united.svg';
 
 const Dashboard: React.FC = () => {
   return (
     <Container>
-      <Navbar>
-        <div>
-          <FiGrid color="#7033FF" />
-          <FiAirplay />
-          <FiSidebar />
-          <FiUsers />
-        </div>
-
-        <FiSettings />
-      </Navbar>
+      <Navbar />
 
       <Wrapper>
         <Header>
