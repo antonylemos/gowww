@@ -12,7 +12,6 @@ export const Wrapper = styled.main`
 
 export const Header = styled.header`
   display: flex;
-  justify-content: center;
   align-items: center;
 
   img {
@@ -49,5 +48,13 @@ export const HeaderContent = styled.div`
     font-size: 14px;
     line-height: 21px;
     color: #666D9E;
+  }
+`;
+
+export const BoardContainer = styled.div`
+  display: flex;
+
+  section + section {
+    margin-left: 16px;
   }
 `;
