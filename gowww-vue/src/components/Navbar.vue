@@ -7,7 +7,7 @@
       <v-icon name="users"></v-icon>
     </div>
 
-    <v-icon class="last-icon" name="settings"></v-icon>
+    <v-icon name="settings"></v-icon>
   </div>
 </template>
 
@@ -42,14 +42,13 @@ svg {
   color: #666D9E;
   height: 24px;
   width: 24px;
-  margin-bottom: 32px;
+}
+
+svg + svg {
+  margin-top: 32px;
 }
 
 .selected-icon {
   color: #7033FF;
-}
-
-.last-icon {
-  margin-bottom: 0;
 }
 </style>
