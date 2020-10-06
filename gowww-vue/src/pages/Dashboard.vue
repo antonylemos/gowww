@@ -8,7 +8,7 @@
 
         <div class="header-content">
           <p>
-            <span>Vamos começar?</span>
+            <span>Vamos começar?</span><span>🔥</span>
           </p>
 
           <h1>Bem vindo de volta, Antony!</h1>
@@ -16,17 +16,24 @@
           <span>Sua área já está pronta com as informações do seu clube favorito</span>
         </div>
       </header>
+
+      <div class="board-container">
+        <Board title="Últimos jogos" emoji="⚽" boardTitle="Manchester United" />
+        <Board title="Classificação" emoji="🏆" boardTitle="Premier League" />
+      </div>
     </main>
   </div>
 </template>
 
 <script>
 import Navbar from '../components/Navbar';
+import Board from '../components/Board';
 
 export default {
   name: 'Dashboard',
   components: {
-    Navbar
+    Navbar,
+    Board
   }
 }
 </script>
@@ -75,10 +82,19 @@ header img {
   line-height: 48px;
   margin-bottom: 8px;
 }
+
 .header-content span {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   color: #666D9E;
+}
+
+.board-container {
+  display: flex;
+}
+
+.board-container div + div {
+  margin-left: 16px;
 }
 </style>
