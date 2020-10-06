@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 
 import Navbar from '../../components/Navbar';
 import Emoji from '../../components/Emoji';
@@ -9,6 +9,32 @@ import { Container, Wrapper, Header, HeaderContent, BoardContainer } from './sty
 import clubBrand from '../../assets/united.svg';
 
 const Dashboard: React.FC = () => {
+  const [user, setUser] = useState({
+    id: Math.random(),
+    name: 'Antony',
+  });
+
+  const [standings, setStandings] = useState([
+    {
+      id: 0,
+      name: 'Premier League',
+    },
+    {
+      id: 1,
+      name: 'UEFA Champions League',
+    },
+  ]);
+
+  const [selectStandings, setSelectStandings] = useState(0);
+
+  const handleStandings = useCallback(() => {
+    if (selectStandings === 0) {
+      setSelectStandings(1);
+    } else {
+      setSelectStandings(0);
+    }
+  }, [selectStandings]);
+
   return (
     <Container>
       <Navbar />
@@ -22,7 +48,7 @@ const Dashboard: React.FC = () => {
               <span>Vamos começar?</span><Emoji symbol="🔥" label="fire"/>
             </p>
 
-            <h1>Bem vindo de volta, Antony!</h1>
+            <h1>Bem vindo de volta, {user.name}!</h1>
 
             <span>Sua área já está pronta com as informações do seu clube favorito</span>
           </HeaderContent>
@@ -40,7 +66,8 @@ const Dashboard: React.FC = () => {
             title="Classificação"
             emoji="🏆"
             emojiLabel="troféu"
-            boardTitle="Premier League"
+            boardTitle={standings[selectStandings].name}
+            handleStandings={handleStandings}
           />
         </BoardContainer>
       </Wrapper>

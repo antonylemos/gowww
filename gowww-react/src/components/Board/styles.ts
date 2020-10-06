@@ -23,8 +23,30 @@ export const BoardContent = styled.div`
 export const Header = styled.header`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 76px;
+  width: 100%;
   margin-left: 16px;
+  margin-right: 16px;
+
+  button {
+    display: flex;
+    align-items: center;
+    border: 0;
+    background: none;
+
+    svg {
+      color: #666D9E;
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+`;
+
+export const HeaderInfo = styled.div`
+  display: flex;
+  align-items: center;
 
   span {
     font-size: 24px;
