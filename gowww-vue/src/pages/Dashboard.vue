@@ -19,7 +19,7 @@
 
       <div class="board-container">
         <Board title="Últimos jogos" emoji="⚽" boardTitle="Manchester United" />
-        <Board title="Classificação" emoji="🏆" boardTitle="Premier League" />
+        <Board title="Classificação" emoji="🏆" :boardTitle="standings[selectedStandings].name" handle="true" @handle-standings="handleStandings" />
       </div>
     </main>
   </div>
@@ -34,6 +34,32 @@ export default {
   components: {
     Navbar,
     Board
+  },
+  data: () => ({
+    user: {
+      id: Math.random(),
+      name: 'Antony',
+    },
+    standings: [
+      {
+        id: 0,
+        name: 'Premier League',
+      },
+      {
+        id: 1,
+        name: 'UEFA Champions League',
+      },
+    ],
+    selectedStandings: 0
+  }),
+  methods: {
+    handleStandings() {
+      if (this.selectedStandings === 0) {
+        this.selectedStandings = 1;
+      } else {
+        this.selectedStandings = 0;
+      }
+    }
   }
 }
 </script>
