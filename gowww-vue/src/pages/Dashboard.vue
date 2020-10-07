@@ -11,7 +11,7 @@
             <span>Vamos começar?</span><span>🔥</span>
           </p>
 
-          <h1>Bem vindo de volta, Antony!</h1>
+          <h1>Bem vindo de volta, {{ this.user.name }}!</h1>
 
           <span>Sua área já está pronta com as informações do seu clube favorito</span>
         </div>
