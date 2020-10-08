@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './pages/Dashboard/dashboard.component';
 
 import { NavbarComponent } from './components/Navbar/navbar.component';
+import { BoardComponent } from './components/Board/board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    NavbarComponent
+    NavbarComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule

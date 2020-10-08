@@ -53,6 +53,6 @@ header img {
   display: flex;
 }
 
-.board-container div + div {
+.board-container board + board {
   margin-left: 16px;
 }

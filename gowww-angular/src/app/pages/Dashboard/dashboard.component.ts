@@ -5,4 +5,19 @@ import { Component } from '@angular/core';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent {}
+export class DashboardComponent {
+  user = {
+    name: 'Antony'
+  }
+  standings = [
+    {
+      id: 0,
+      name: 'Premier League',
+    },
+    {
+      id: 1,
+      name: 'UEFA Champions League',
+    },
+  ]
+  selectedStandings = 0
+}
