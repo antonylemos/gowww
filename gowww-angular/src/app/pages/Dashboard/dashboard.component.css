@@ -1,0 +1,58 @@
+.dashboard {
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 88px;
+  width: 88px;
+  margin-right: 16px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-content p {
+  margin-bottom: 8px;
+}
+
+.header-content p span {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666D9E;
+}
+
+.header-content h1 {
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 8px;
+}
+
+.header-content span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666D9E;
+}
+
+.board-container {
+  display: flex;
+}
+
+.board-container board + board {
+  margin-left: 16px;
+}
