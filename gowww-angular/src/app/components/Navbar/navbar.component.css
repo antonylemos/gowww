@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 88px;
+  height: 100vh;
+  padding: 32px;
+  margin-right: 16px;
+  background: #202442;
+}
+.navbar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected-icon {
+  color: #7033FF;
+}
+
+svg {
+  color: #666D9E;
+  height: 24px;
+  width: 24px;
+}
+
+svg + svg {
+  margin-top: 32px;
+}
