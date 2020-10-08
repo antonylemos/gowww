@@ -8,7 +8,7 @@
         <span>{{ boardTitle }}</span>
       </div>
 
-      <button>
+      <button *ngIf="handle === 'true'" (click)="onHandleStanding.emit()">
         <i data-feather="arrow-right"></i>
       </button>
     </header>

@@ -20,4 +20,12 @@ export class DashboardComponent {
     },
   ]
   selectedStandings = 0
+
+  handleStandings() {
+    if (this.selectedStandings === 0) {
+      this.selectedStandings = 1;
+    } else {
+      this.selectedStandings = 0;
+    }
+  }
 }

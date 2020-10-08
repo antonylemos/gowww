@@ -18,7 +18,8 @@
 
     <div class="board-container">
       <board title="Últimos jogos" emoji="⚽" boardTitle="Manchester United"></board>
-      <board title="Classificação" emoji="🏆" [boardTitle]="standings[selectedStandings].name"></board>
+      <board title="Classificação" emoji="🏆" [boardTitle]="standings[selectedStandings].name" handle="true"
+        (onHandleStanding)="handleStandings()"></board>
     </div>
   </main>
 </div>
