@@ -1,5 +1,7 @@
 import React, { useCallback, useState } from 'react';
 
+import { useAuth } from '../../hooks/auth';
+
 import Navbar from '../../components/Navbar';
 import Emoji from '../../components/Emoji';
 import Board from '../../components/Board';
@@ -9,12 +11,9 @@ import { Container, Wrapper, Header, HeaderContent, BoardContainer } from './sty
 import clubBrand from '../../assets/united.svg';
 
 const Dashboard: React.FC = () => {
-  const [user, setUser] = useState({
-    id: Math.random(),
-    name: 'Antony',
-  });
+  const { user } = useAuth();
 
-  const [standings, setStandings] = useState([
+  const [standings,] = useState([
     {
       id: 0,
       name: 'Premier League',
