@@ -12,6 +12,12 @@ export const Container = styled.nav`
 
   background: #202442;
 
+  button {
+    margin-left: auto;
+    background: transparent;
+    border: 0;
+  }
+
   div {
     justify-content: center;
     align-items: center;

@@ -3,7 +3,7 @@ import * as Feather from 'feather-icons';
 
 @Component({
   selector: 'app-root',
-  template: '<dashboard></dashboard>',
+  template: '<signin></signin>',
 })
 export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {

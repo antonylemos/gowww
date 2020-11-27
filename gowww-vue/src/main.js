@@ -1,10 +1,7 @@
-import Vue from 'vue'
+import Vue, { createApp } from 'vue';
 import App from './App.vue'
 import feather from 'vue-icon'
 
 Vue.use(feather, 'v-icon')
-Vue.config.productionTip = false
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+createApp(App).mount('#app')
