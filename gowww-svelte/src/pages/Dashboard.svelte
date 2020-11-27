@@ -22,6 +22,8 @@
       selectedStandings = 0;
     }
   }
+
+  let united = 'united.svg';
 </script>
 
 <style>
@@ -90,7 +92,7 @@
 
   <main>
     <header>
-      <img src="../assets/united.svg" alt="Manchester United" />
+      <img src={united} alt="Manchester United" />
 
       <div class="header-content">
         <p><span>Vamos começar?</span><span>🔥</span></p>
