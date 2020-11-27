@@ -1,0 +1,18 @@
+<div class="signin">
+  <img src="../../../assets/logo.png" alt="Gowww" />
+
+  <form #signInForm="ngForm" (ngSubmit)="signInForm.form.valid && onSubmit()">
+    <div>
+      <i data-feather="user"></i>
+
+      <input #name="ngModel" [(ngModel)]="user.name" name="name" type="text" placeholder="Nome" required>
+    </div>
+    <div>
+      <i data-feather="mail"></i>
+
+      <input #email="ngModel" [(ngModel)]="user.email" name="email" type="text" placeholder="E-mail" required>
+    </div>
+
+    <button type="submit">Entrar</button>
+  </form>
+</div>

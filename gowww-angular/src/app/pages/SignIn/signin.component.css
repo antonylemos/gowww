@@ -1,0 +1,54 @@
+.signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+form {
+  margin-top: 80px;
+}
+
+form div {
+  background: #2D325A;
+  border-radius: 16px;
+  padding: 16px;
+  width: 100%;
+  color: #666D9E;
+  display: flex;
+  align-items: center;
+}
+
+div + div {
+  margin-top: 8px;
+}
+
+input {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #666D9E;
+}
+
+svg {
+  margin-right: 16px;
+}
+
+button {
+  background: #7033FF;
+  height: 56px;
+  border-radius: 16px;
+  border: 0;
+  padding: 0 16px;
+  color: #fff;
+  width: 100%;
+  font-weight: 500;
+  margin-top: 24px;
+  transition: opacity 0.2s;
+}
