@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.nav`
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,7 +9,6 @@ export const Container = styled.nav`
   width: 88px;
   height: 100vh;
   padding: 32px;
-  margin-right: 16px;
 
   background: #202442;
 
@@ -22,9 +22,15 @@ export const Container = styled.nav`
     justify-content: center;
     align-items: center;
 
-    svg {
-      & + svg {
+    div {
+      & + div {
         margin-top: 32px;
+      }
+
+      a.active {
+        svg {
+          color: #7033FF;
+        }
       }
     }
   }
