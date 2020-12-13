@@ -8,6 +8,7 @@ export const Wrapper = styled.main`
   display: flex;
   flex-direction: column;
   margin-top: 32px;
+  margin-bottom: 32px;
   margin-left: 104px;
 `;
 
@@ -49,13 +50,5 @@ export const HeaderContent = styled.div`
     font-size: 14px;
     line-height: 21px;
     color: #666D9E;
-  }
-`;
-
-export const BoardContainer = styled.div`
-  display: flex;
-
-  section + section {
-    margin-left: 16px;
   }
 `;
